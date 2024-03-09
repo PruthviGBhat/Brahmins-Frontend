@@ -22,7 +22,7 @@ const Book = () => {
     const handleReservation = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:3000/api/reservation/send", {
+            const response = await fetch("https://brahmins-backend.onrender.com/api/reservation/send", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
